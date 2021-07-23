@@ -1,6 +1,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="Shortcut Icon" type="image/x-icon" href="<?php echo $LinksRoute; ?>assets/icons/social.ico" />
+<link rel="Shortcut Icon" type="image/x-icon" href="<?php echo $LinksRoute; ?>assets/icons/arbol.ico" />
 <script src="<?php echo $LinksRoute; ?>js/sweet-alert.min.js"></script>
 <link rel="stylesheet" href="<?php echo $LinksRoute; ?>css/sweet-alert.css">
 <link rel="stylesheet" href="<?php echo $LinksRoute; ?>css/material-design-iconic-font.min.css">

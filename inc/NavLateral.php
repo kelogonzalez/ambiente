@@ -4,13 +4,10 @@
 <div class="navbar-lateral full-reset">
     <div class="visible-xs font-movile-menu mobile-menu-button"></div>
     <div class="full-reset container-menu-movile custom-scroll-containers">
-        <div class="logo full-reset all-tittles">
-            <i class="visible-xs zmdi zmdi-close pull-left mobile-menu-button" style="line-height: 55px; cursor: pointer; padding: 0 10px; margin-left: 7px;"></i>
-            sistema de Gestión Social
-        </div>
-        <div class="full-reset" style="background-color:#85B0AB; padding: 10px 0; color:#fff;">
+        
+        <div class="full-reset" style="background-color:#99D0BB; padding: 10px 0; color:#fff;">
             <figure>
-                <img src="<?php echo $LinksRoute; ?>assets/img/social.png" alt="Biblioteca" class="img-responsive center-box" style="width:100%;">
+                <img src="<?php echo $LinksRoute; ?>assets/img/ambiente.png" alt="Ambiente" class="img-responsive center-box" style="width:100%;">
             </figure>
           <!--  <p class="text-center" style="padding-top: 15px;">Sistema Turístico</p> -->
         </div>
@@ -97,17 +94,17 @@
                 </li>
                 <li>
                     <div class="dropdown-menu-button">
-                        <i class="zmdi zmdi-assignment-o zmdi-hc-fw"></i>&nbsp;&nbsp; Registros de Beneficiarios  <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw"></i>
+                        <i class="zmdi zmdi-assignment-o zmdi-hc-fw"></i>&nbsp;&nbsp; Centros Sanitarios  <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw"></i>
                     </div>
                     <ul class="list-unstyled">
                         <li>
                             <a class="btn-addBook" href="#" data-process="<?php echo $LinksRoute; ?>process/checkDataAdmin.php" data-href="<?php echo $LinkRouteAdmin; ?>admininventory.php">
-                                <i class="zmdi zmdi-book zmdi-hc-fw"></i>&nbsp;&nbsp; Beneficiarios de Diálisis
+                                <i class="zmdi zmdi-book zmdi-hc-fw"></i>&nbsp;&nbsp; Registrar Centros
                             </a>
                         </li>
                         <li>
                             <a href="<?php echo $LinksRoute; ?>catalog.php">
-                                <i class="zmdi zmdi-bookmark-outline zmdi-hc-fw"></i>&nbsp;&nbsp; Catálogo de Beneficiarios
+                                <i class="zmdi zmdi-bookmark-outline zmdi-hc-fw"></i>&nbsp;&nbsp; Catálogo de Centros Sanitarios
                             </a>
                         </li>
                     </ul>
@@ -166,14 +163,14 @@
                     </ul>
                 </li>
 
-
+-->
 <li>
     <a href="<?php echo $LinkRoute; ?>/turismo/localizador/index.html">
         <i class="zmdi zmdi-pin zmdi-hc-fw"></i>&nbsp;&nbsp; Localizador en Mapa
     </a>
 </li>
--->
 
+<!--
 <li>
     <a href="<?php echo $LinkRoute; ?>/social/logistica/index.php">
         <i class="zmdi zmdi-airplane zmdi-hc-fw"></i>&nbsp;&nbsp; Logística
@@ -199,7 +196,7 @@
         <i class="zmdi zmdi-walk zmdi-hc-fw"></i>&nbsp;&nbsp; Ayudas Técnicas
     </a>
 </li>
-
+                                -->
                 <li>
                     <a href="<?php echo $LinkRouteAdmin; ?>adminreport.php">
                         <i class="zmdi zmdi-trending-up zmdi-hc-fw"></i>&nbsp;&nbsp; Reportes y estadísticas

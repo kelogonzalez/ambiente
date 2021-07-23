@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Sistema - Gestión Social</title>
+    <title>Sistema - Gestión Ambiental</title>
     <?php
         session_start();
         $LinksRoute="./";
@@ -24,7 +24,7 @@
         ?>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">Sistema de Gestión Social <small>Inicio</small></h1>
+              <h1 class="all-tittles">Sistema de Gestión Ambiental <small>Inicio</small></h1>
             </div>
         </div>
         <?php
@@ -46,7 +46,7 @@
         ?>
         <section class="full-reset text-center" style="padding: 40px 0;">
             <article class="tile" data-href="./admin/adminlistuser.php" data-num="<?php echo mysqli_num_rows($checkAdmins); ?>">
-                <div class="tile-icon full-reset"><i class="zmdi zmdi-face"></i></div>
+                <div class="tile-icon full-reset"><i class="zmdi zmdi-account"></i></div>
                 <div class="tile-name all-tittles">Personal</div>
                 <div class="tile-num full-reset"><?php echo mysqli_num_rows($checkAdmins); ?></div>
             </article>
@@ -76,8 +76,8 @@
                 <div class="tile-num full-reset"><?php echo mysqli_num_rows($checkProviders); ?></div>
             </article>-->
             <article class="tile" data-href="./catalog.php" data-num="<?php echo mysqli_num_rows($checkCategories); ?>">
-                <div class="tile-icon full-reset"><i class="zmdi zmdi-book"></i></div>
-                <div class="tile-name all-tittles">Beneficiarios de Diálisis</div>
+                <div class="tile-icon full-reset"><i class="zmdi zmdi-drink"></i></div>
+                <div class="tile-name all-tittles">Centros Sanitarios</div>
                 <div class="tile-num full-reset"><?php echo $totalBooks; ?></div>
             </article>
             <!--
