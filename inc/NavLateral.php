@@ -99,12 +99,22 @@
                     <ul class="list-unstyled">
                         <li>
                             <a class="btn-addBook" href="#" data-process="<?php echo $LinksRoute; ?>process/checkDataAdmin.php" data-href="<?php echo $LinkRouteAdmin; ?>admininventory.php">
-                                <i class="zmdi zmdi-book zmdi-hc-fw"></i>&nbsp;&nbsp; Registrar Centros
+                                <i class="zmdi zmdi-book zmdi-hc-fw"></i>&nbsp;&nbsp; Registrar Centros Urbanos
                             </a>
                         </li>
                         <li>
                             <a href="<?php echo $LinksRoute; ?>catalog.php">
-                                <i class="zmdi zmdi-bookmark-outline zmdi-hc-fw"></i>&nbsp;&nbsp; Catálogo de Centros Sanitarios
+                                <i class="zmdi zmdi-bookmark-outline zmdi-hc-fw"></i>&nbsp;&nbsp; Catálogo de Centros Urbanos
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn-addBook" href="#" data-process="<?php echo $LinksRoute; ?>process/checkDataRural.php" data-href="<?php echo $LinkRouteAdmin; ?>adminrural.php">
+                                <i class="zmdi zmdi-book zmdi-hc-fw"></i>&nbsp;&nbsp; Registrar Centros Rurales
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo $LinksRoute; ?>catalog.php">
+                                <i class="zmdi zmdi-bookmark-outline zmdi-hc-fw"></i>&nbsp;&nbsp; Catálogo de Centros Rurales
                             </a>
                         </li>
                     </ul>
@@ -165,7 +175,7 @@
 
 -->
 <li>
-    <a href="<?php echo $LinkRoute; ?>/turismo/localizador/index.html">
+    <a href="<?php echo $LinkRoute; ?>/ambiente/localizador/index.html">
         <i class="zmdi zmdi-pin zmdi-hc-fw"></i>&nbsp;&nbsp; Localizador en Mapa
     </a>
 </li>

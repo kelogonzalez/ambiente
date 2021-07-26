@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Registrar Centro Sanitario Urbano</title>
+    <title>Registrar Centro Sanitario Rural</title>
     <?php
         session_start();
         $LinksRoute="../";
@@ -22,7 +22,7 @@
         ?>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">Sistema Gestión Ambiental <small>Añadir Centro Sanitario Urbano</small></h1>
+              <h1 class="all-tittles">Sistema Gestión Ambiental <small>Añadir Centro Sanitario Rural</small></h1>
             </div>
         </div>
         <div class="container-fluid"  style="margin: 50px 0;">
@@ -36,9 +36,9 @@
             </div>
         </div>
         <div class="container-fluid">
-            <form action="../process/AddBook.php" method="POST" id="saveData" autocomplete="off" enctype="multipart/form-data">
+            <form action="../process/AddRural.php" method="POST" id="saveData" autocomplete="off" enctype="multipart/form-data">
                 <div class="container-flat-form">
-                    <div class="title-flat-form title-flat-blue">Nuevo Centro Sanitario Urbano</div>
+                    <div class="title-flat-form title-flat-blue">Nuevo Centro Sanitario Rural</div>
                     <div class="row">
                        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                             <legend><strong>FICHA</strong></legend><br>
