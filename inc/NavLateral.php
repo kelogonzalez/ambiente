@@ -113,7 +113,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?php echo $LinksRoute; ?>catalog.php">
+                            <a href="<?php echo $LinksRoute; ?>catalogrural.php">
                                 <i class="zmdi zmdi-bookmark-outline zmdi-hc-fw"></i>&nbsp;&nbsp; Catálogo de Centros Rurales
                             </a>
                         </li>

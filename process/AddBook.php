@@ -111,8 +111,8 @@ if(mysqli_num_rows($bookCheckInstitution)>0){
            if(consultasSQL::InsertSQL("libro", "CodigoLibro, CodigoLibroManual, CodigoCategoria, CodigoProveedor, CodigoInfraestructura, Autor, Pais, Year, Estimado, idioma, hombres, mujeres, discapacidad, genero, reservas, simples, dobles, triples, matrimonio, familia, camas, plazas, mesas, banoshombres, banosmujeres, escape, pagos, parqueaderos, seguridad, mascotas, limpieza, folleteria, promocion, capacitacion, capacidad, senaletica, wifi, operadores, turnos, bicicletas, maleteros, chalecos, compania, licencias, boton, cinturones, vehiculos, pasajeros, socios, choferes, asientos, tv, ac, microfono, estado, sector, referencia, Titulo, Edicion, Ubicacion, Cargo, Editorial, Existencias, Prestado, Descripcion", "'$bookCode','$bookCodeManual','$bookCategory','$bookProvider','$bookInstitution','$bookAutor','$bookCountry','$bookYear','$bookEstimated','$bookIdioma','$bookHombres','$bookMujeres','$bookDiscapacidad','$bookGenero','$bookReservas','$bookSimples','$bookDobles','$bookTriples','$bookMatrimonio','$bookFamilia','$bookCamas','$bookPlazas','$bookMesas','$bookBanosHombres','$bookBanosMujeres','$bookEscape','$bookPagos','$bookParqueaderos','$bookSeguridad','$bookMascotas','$bookLimpieza','$bookFolleteria','$bookPromocion','$bookCapacitacion','$bookCapacidad','$bookSenaletica','$bookWifi','$bookOperadores','$bookTurnos','$bookBicicletas','$bookMaleteros','$bookChalecos','$bookCompania','$bookLicencias','$bookBoton','$bookCinturones','$bookVehiculos','$bookPasajeros','$bookSocios','$bookChoferes','$bookAsientos','$bookTV','$bookAC','$bookMicrofono','$bookEstado','$bookSector','$bookReferencia','$bookName','$bookEdition','$bookLocation','$bookOffice','$bookEditorial','$bookCopies','$bookBorrowed','$bookDescription'")){
                echo '<script type="text/javascript">
                     swal({
-                       title:"Beneficiario registrado!",
-                       text:"Los datos del beneficiario se registraron correctamente",
+                       title:"Centro Sanitario registrado!",
+                       text:"Los datos del centro urbano se registraron correctamente",
                        type: "success",
                        confirmButtonText: "Aceptar"
                     });
@@ -122,7 +122,7 @@ if(mysqli_num_rows($bookCheckInstitution)>0){
             echo '<script type="text/javascript">
                 swal({
                    title:"¡Ocurrió un error inesperado!",
-                   text:"No se pudo registrar el beneficiario, por favor intenta nuevamente",
+                   text:"No se pudo registrar el centro urbano, por favor intenta nuevamente",
                    type: "error",
                    confirmButtonText: "Aceptar"
                 });
@@ -190,8 +190,8 @@ if(mysqli_num_rows($bookCheckInstitution)>0){
               if(consultasSQL::InsertSQL("libro", "CodigoLibro, CodigoLibroManual, CodigoCategoria, CodigoProveedor, CodigoInfraestructura, Autor, Pais, Year, Estimado, idioma, hombres, mujeres, discapacidad, genero, reservas, simples, dobles, triples, matrimonio, familia, camas, plazas, mesas, banoshombres, banosmujeres, escape, pagos, parqueaderos, seguridad, mascotas, limpieza, folleteria, promocion, capacitacion, capacidad, senaletica, wifi, operadores, turnos, bicicletas, maleteros, chalecos, compania, licencias, boton, cinturones, vehiculos, pasajeros, socios, choferes, asientos, tv, ac, microfono, estado, sector, referencia,Titulo, Edicion, Ubicacion, Cargo, Editorial, Existencias, Prestado, Imagen, PDF, Download, Descripcion", "'$bookCode','$bookCodeManual','$bookCategory','$bookProvider','$bookInstitution','$bookAutor','$bookCountry','$bookYear','$bookEstimated','$bookIdioma','$bookHombres','$bookMujeres','$bookDiscapacidad','$bookGenero','$bookReservas','$bookSimples','$bookDobles','$bookTriples','$bookMatrimonio','$bookFamilia','$bookCamas','$bookPlazas','$bookMesas','$bookBanosHombres','$bookBanosMujeres','$bookEscape','$bookPagos','$bookParqueaderos','$bookSeguridad','$bookMascotas','$bookLimpieza','$bookFolleteria','$bookPromocion','$bookCapacitacion','$bookCapacidad','$bookSenaletica','$bookWifi','$bookOperadores','$bookTurnos','$bookBicicletas','$bookMaleteros','$bookChalecos','$bookCompania','$bookLicencias','$bookBoton','$bookCinturones','$bookVehiculos','$bookPasajeros','$bookSocios','$bookChoferes','$bookAsientos','$bookTV','$bookAC','$bookMicrofono','$bookEstado','$bookSector','$bookReferencia','$bookName','$bookEdition','$bookLocation','$bookOffice','$bookEditorial','$bookCopies','$bookBorrowed','$finalPictureName','$finalPDFName','$bookDownload','$bookDescription'")){
                 echo '<script type="text/javascript">
                     swal({
-                       title:"Beneficiario registrado!",
-                       text:"Los datos del beneficiario se registraron correctamente",
+                       title:"Centro Urbano registrado!",
+                       text:"Los datos del centro urbano se registraron correctamente",
                        type: "success",
                        confirmButtonText: "Aceptar"
                     });
@@ -201,7 +201,7 @@ if(mysqli_num_rows($bookCheckInstitution)>0){
                 echo '<script type="text/javascript">
                     swal({
                        title:"¡Ocurrió un error inesperado!",
-                       text:"No se pudo registrar el beneficiario, por favor intenta nuevamente",
+                       text:"No se pudo registrar el centro urbano, por favor intenta nuevamente",
                        type: "error",
                        confirmButtonText: "Aceptar"
                     });

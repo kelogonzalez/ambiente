@@ -38,12 +38,22 @@
             while($DBT=mysqli_fetch_array($checkBooks, MYSQLI_ASSOC)){
                 $totalBooks=$totalBooks+$DBT['Existencias'];
             }
+            $checkBooksS=ejecutarSQL::consultar("SELECT * FROM rural");
+            $totalBooksS=0;
+            while($DBTS=mysqli_fetch_array($checkBooksS, MYSQLI_ASSOC)){
+            $totalBooksS=$totalBooksS+$DBTS['Existencias'];
+            }
             $checkCategories=ejecutarSQL::consultar("SELECT * FROM categoria");
             $checkSections=ejecutarSQL::consultar("SELECT * FROM seccion");
             $checkReservation=ejecutarSQL::consultar("SELECT * FROM prestamo WHERE Estado='Reservacion'");
             $checkLoanPending=ejecutarSQL::consultar("SELECT * FROM prestamo WHERE Estado='Prestamo'");
             $checkLoan=ejecutarSQL::consultar("SELECT * FROM prestamo WHERE Estado='Entregado'");
         ?>
+
+
+
+?>
+
         <section class="full-reset text-center" style="padding: 40px 0;">
             <article class="tile" data-href="./admin/adminlistuser.php" data-num="<?php echo mysqli_num_rows($checkAdmins); ?>">
                 <div class="tile-icon full-reset"><i class="zmdi zmdi-account"></i></div>
@@ -77,9 +87,21 @@
             </article>-->
             <article class="tile" data-href="./catalog.php" data-num="<?php echo mysqli_num_rows($checkCategories); ?>">
                 <div class="tile-icon full-reset"><i class="zmdi zmdi-drink"></i></div>
-                <div class="tile-name all-tittles">Centros Sanitarios</div>
+                <div class="tile-name all-tittles">Centros Sanitarios Urbanos</div>
                 <div class="tile-num full-reset"><?php echo $totalBooks; ?></div>
             </article>
+
+            <article class="tile" data-href="./catalogrural.php" data-num="<?php echo mysqli_num_rows($checkCategories); ?>">
+                <div class="tile-icon full-reset"><i class="zmdi zmdi-drink"></i></div>
+                <div class="tile-name all-tittles">Centros Sanitarios Rurales</div>
+                <div class="tile-num full-reset"><?php echo $totalBooksS; ?></div>
+            </article>
+
+
+
+
+
+
             <!--
             <article class="tile" data-href="./admin/adminlistcategory.php" data-num="<?php echo mysqli_num_rows($checkCategories); ?>">
                 <div class="tile-icon full-reset"><i class="zmdi zmdi-bookmark-outline"></i></div>

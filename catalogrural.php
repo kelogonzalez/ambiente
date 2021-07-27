@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Catálogo de Centros Sanitarios Urbanos</title>
+    <title>Catálogo de Centros Sanitarios Rural</title>
     <?php
         session_start();
         $LinksRoute="./";
@@ -14,7 +14,7 @@
                window.location ="infobook.php?codeBook="+$(this).attr("data-code-book");
            });
            $('.list-catalog-container li').click(function(){
-               window.location="catalog.php?CategoryCode="+$(this).attr("data-code-category");
+               window.location="catalogrural.php?CategoryCode="+$(this).attr("data-code-category");
            });
         });
     </script> 
@@ -33,7 +33,7 @@
         ?>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">Sistema Gestión Ambiental <small>Catálogo de Centros Sanitarios Urbanos</small></h1>
+              <h1 class="all-tittles">Sistema Gestión Ambiental <small>Catálogo de Centros Sanitarios Rurales</small></h1>
             </div>
         </div>
          <div class="container-fluid"  style="margin: 40px 0;">
@@ -47,7 +47,7 @@
             </div>
         </div>
         <?php
-            $checkingAllBooks=ejecutarSQL::consultar("SELECT * FROM libro");
+            $checkingAllBooks=ejecutarSQL::consultar("SELECT * FROM rural");
             if(mysqli_num_rows($checkingAllBooks)>0){
                 echo '<div class="container-fluid" style="margin: 0 0 50px 0;"><h2 class="text-center" style="margin: 0 0 25px 0;">Tipo de Establecimiento</h2><ul class="list-unstyled text-center list-catalog-container">';
                 $checkCategory=ejecutarSQL::consultar("SELECT * FROM categoria order by Nombre ASC");
@@ -71,7 +71,7 @@
                 $regpagina = 30;
                 $inicio = ($pagina > 1) ? (($pagina * $regpagina) - $regpagina) : 0;
 
-                $checkCodeBook=mysqli_query($mysqli,"SELECT SQL_CALC_FOUND_ROWS * FROM libro WHERE CodigoCategoria='$VarCategoryCatalog' ORDER BY Titulo ASC  LIMIT $inicio, $regpagina");
+                $checkCodeBook=mysqli_query($mysqli,"SELECT SQL_CALC_FOUND_ROWS * FROM rural WHERE CodigoCategoria='$VarCategoryCatalog' ORDER BY Titulo ASC  LIMIT $inicio, $regpagina");
 
                 $totalregistros = mysqli_query($mysqli,"SELECT FOUND_ROWS()");
                 $totalregistros = mysqli_fetch_array($totalregistros, MYSQLI_ASSOC);
@@ -149,7 +149,7 @@
 	                        </li>
 	                    <?php else: ?>
 	                        <li>
-	                            <a href="catalog.php?CategoryCode=<?php echo $VarCategoryCatalog; ?>&pagina=<?php echo $pagina-1; ?>" aria-label="Previous">
+	                            <a href="catalogrural.php?CategoryCode=<?php echo $VarCategoryCatalog; ?>&pagina=<?php echo $pagina-1; ?>" aria-label="Previous">
 	                                <span aria-hidden="true">&laquo;</span>
 	                            </a>
 	                        </li>
@@ -159,9 +159,9 @@
 	                    <?php
 	                        for($i=1; $i <= $numeropaginas; $i++ ){
 	                            if($pagina == $i){
-	                                echo '<li class="active"><a href="catalog.php?CategoryCode='.$VarCategoryCatalog.'&pagina='.$i.'">'.$i.'</a></li>';
+	                                echo '<li class="active"><a href="catalogrural.php?CategoryCode='.$VarCategoryCatalog.'&pagina='.$i.'">'.$i.'</a></li>';
 	                            }else{
-	                                echo '<li><a href="catalog.php?CategoryCode='.$VarCategoryCatalog.'&pagina='.$i.'">'.$i.'</a></li>';
+	                                echo '<li><a href="catalogrural.php?CategoryCode='.$VarCategoryCatalog.'&pagina='.$i.'">'.$i.'</a></li>';
 	                            }
 	                        }
 	                    ?>
@@ -175,7 +175,7 @@
 	                        </li>
 	                    <?php else: ?>
 	                        <li>
-	                            <a href="catalog.php?CategoryCode=<?php echo $VarCategoryCatalog; ?>&pagina=<?php echo $pagina+1; ?>" aria-label="Previous">
+	                            <a href="catalogrural.php?CategoryCode=<?php echo $VarCategoryCatalog; ?>&pagina=<?php echo $pagina+1; ?>" aria-label="Previous">
 	                                <span aria-hidden="true">&raquo;</span>
 	                            </a>
 	                        </li>
@@ -189,7 +189,7 @@
                     mysqli_free_result($checkCodeBook);
                 }
             }else{
-                echo '<br><br><br><p class="lead text-center all-tittles">No hay centros registradas en el sistema</p><br><br><br><br><br><br>';
+                echo '<br><br><br><p class="lead text-center all-tittles">No hay centros registrados en el sistema</p><br><br><br><br><br><br>';
             }
             mysqli_free_result($checkingAllBooks);
         ?>
