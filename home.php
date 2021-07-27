@@ -51,9 +51,6 @@
         ?>
 
 
-
-?>
-
         <section class="full-reset text-center" style="padding: 40px 0;">
             <article class="tile" data-href="./admin/adminlistuser.php" data-num="<?php echo mysqli_num_rows($checkAdmins); ?>">
                 <div class="tile-icon full-reset"><i class="zmdi zmdi-account"></i></div>

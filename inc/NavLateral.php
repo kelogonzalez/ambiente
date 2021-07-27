@@ -117,6 +117,18 @@
                                 <i class="zmdi zmdi-bookmark-outline zmdi-hc-fw"></i>&nbsp;&nbsp; Catálogo de Centros Rurales
                             </a>
                         </li>
+
+                        <li>
+                            <a class="btn-addBook" href="#" data-process="<?php echo $LinksRoute; ?>process/checkDataMSP.php" data-href="<?php echo $LinkRouteAdmin; ?>adminmsp.php">
+                                <i class="zmdi zmdi-book zmdi-hc-fw"></i>&nbsp;&nbsp; Registrar Centros MSP
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo $LinksRoute; ?>catalogmsp.php">
+                                <i class="zmdi zmdi-bookmark-outline zmdi-hc-fw"></i>&nbsp;&nbsp; Catálogo de Centros MSP
+                            </a>
+                        </li>
+
                     </ul>
                 </li>
 

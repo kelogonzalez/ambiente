@@ -229,7 +229,7 @@ span.label-mhover{
   color: #FFD559;  
 }
 .navbar-user-top > ul > li:hover span.badge{
-    background-color: #E34724;
+    background-color: #0e910e;
 }
 .navbar-user-top > ul > li > i{
     font-size: 27px;
@@ -299,7 +299,7 @@ span.label-mhover{
     line-height: 45px;
 }
 .nav-lateral-list-menu ul li a:hover{
-    background-color: #E75A5A;
+    background-color: #09af2d;
 }
 .nav-lateral-list-menu ul li a:active,
 .nav-lateral-list-menu ul li a:focus{
@@ -374,7 +374,7 @@ span.label-mhover{
    background-color: #16a085;
 }
 .title-flat-blue{
-   background-color: #3598D9;
+   background-color: #0f7e2b;
 }
 /*Controles de formularios material desing ================*/
 .group-material{ 
@@ -438,7 +438,7 @@ input.material-control:focus:invalid ~ label,
 input.material-control:invalid ~ label{
   top:-20px;
   font-size:17px;
-  color: #E34724;
+  color: #0b8351;
   font-weight: normal;
 }
 input.material-control:focus:invalid ~ label::after{
@@ -447,7 +447,7 @@ input.material-control:focus:invalid ~ label::after{
     padding: 0 5px;
     font-size: 14px;
     color: #fff;
-    background-color: #E34724;
+    background-color: #0ba83a;
     border-radius: 4px;
     font-weight: normal;
 }
@@ -564,7 +564,7 @@ input.material-control:focus ~ .highlight {
     position: relative;
 }
 .tile-icon{
-    color: #B71C1C;
+    color: #09a337;
     border-bottom: 1px solid #E1E1E1;
     font-size: 50px;
 }
@@ -596,7 +596,7 @@ input.material-control:focus ~ .highlight {
 /* ============= Estilos report ============= */
 .report-content{
     padding: 30px 0;
-    color: #0288D1;
+    color: #146e49;
     border: 1px solid transparent;
     border-radius: 4px;
     position: relative;
@@ -817,7 +817,7 @@ input.material-control:focus ~ .highlight {
 }
 @keyframes color {
   100%, 0% { stroke: #d62d20; }
-  40% { stroke: #0057e7; }
+  40% { stroke: #0e794c; }
   66% { stroke: #008744; }
   80%, 90% { stroke: #ffa700; }
 }
