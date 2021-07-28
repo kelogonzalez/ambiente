@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Buscar Empresa</title>
+    <title>Buscar Centro</title>
     <?php
         session_start();
         $LinksRoute="./";
@@ -42,7 +42,7 @@
         $regpagina = 30;
         $inicio = ($pagina > 1) ? (($pagina * $regpagina) - $regpagina) : 0;
 
-        $checkNameBook= mysqli_query($mysqli,"SELECT SQL_CALC_FOUND_ROWS * FROM libro WHERE Titulo LIKE '%".$BookNameSearch."%' OR CodigoLibroManual LIKE '%".$BookNameSearch."%' OR Autor LIKE '%".$BookNameSearch."%' ORDER BY Titulo ASC LIMIT $inicio, $regpagina");
+        $checkNameBook= mysqli_query($mysqli,"SELECT SQL_CALC_FOUND_ROWS * FROM libro rural WHERE Titulo LIKE '%".$BookNameSearch."%' OR CodigoLibroManual LIKE '%".$BookNameSearch."%' OR Autor LIKE '%".$BookNameSearch."%' ORDER BY Titulo ASC LIMIT $inicio, $regpagina");
 
         $totalregistros = mysqli_query($mysqli,"SELECT FOUND_ROWS()");
         $totalregistros = mysqli_fetch_array($totalregistros, MYSQLI_ASSOC);

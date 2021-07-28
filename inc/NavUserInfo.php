@@ -22,9 +22,11 @@
         <li  class="tooltips-general exit-system-button" data-href="<?php echo $LinksRoute; ?>process/logout.php" data-placement="bottom" title="Salir del Sistema">
             <i class="zmdi zmdi-power"></i>
         </li>
+        
+        <!--
         <li  class="tooltips-general search-book-button" data-href="<?php echo $LinksRoute; ?>searchbook.php" data-placement="bottom" title="Buscar Empresa">
             <i class="zmdi zmdi-search"></i>
-        </li>
+        </li>-->
         <li  class="tooltips-general btn-help" data-placement="bottom" title="Ayuda">
             <i class="zmdi zmdi-help-outline zmdi-hc-fw"></i>
         </li>

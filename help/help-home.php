@@ -14,24 +14,6 @@
             </figure>
         </div>
     </div>
-    <hr>
-    <div class="row">
-        <div class="page-header">
-          <h2 class="all-tittles">Ayuda <small>inicio</small></h2>
-        </div>
-        <div class="col-xs-12">
-            <p class="text-help">
-                Los azulejos representan las listas disponibles en el sistema, haz click en los azulejos para acceder a la lista que deseas.<br>
-                1- Representa el número total de registros en el sistema<br>
-                2- Representa el nombre del elemento<br>
-                3- El icono representa el elemento del sistema
-            </p>
-        </div>
-        <div class="col-xs-12">
-            <figure>
-                <img class="img-responsive center-box" src="./assets/img-help/home-tile.png">
-            </figure>
-        </div>
-    </div>
+    
 </div>
             

@@ -43,6 +43,14 @@
             while($DBTS=mysqli_fetch_array($checkBooksS, MYSQLI_ASSOC)){
             $totalBooksS=$totalBooksS+$DBTS['Existencias'];
             }
+            
+            $checkBooksMSP=ejecutarSQL::consultar("SELECT * FROM msp");
+            $totalBooksMSP=0;
+            while($DBTMSP=mysqli_fetch_array($checkBooksMSP, MYSQLI_ASSOC)){
+            $totalBooksMSP=$totalBooksMSP+$DBTMSP['Existencias'];
+            }
+
+
             $checkCategories=ejecutarSQL::consultar("SELECT * FROM categoria");
             $checkSections=ejecutarSQL::consultar("SELECT * FROM seccion");
             $checkReservation=ejecutarSQL::consultar("SELECT * FROM prestamo WHERE Estado='Reservacion'");
@@ -94,6 +102,11 @@
                 <div class="tile-num full-reset"><?php echo $totalBooksS; ?></div>
             </article>
 
+            <article class="tile" data-href="./catalogmsp.php" data-num="<?php echo mysqli_num_rows($checkCategories); ?>">
+                <div class="tile-icon full-reset"><i class="zmdi zmdi-drink"></i></div>
+                <div class="tile-name all-tittles">Centros Sanitarios MSP</div>
+                <div class="tile-num full-reset"><?php echo $totalBooksMSP; ?></div>
+            </article>
 
 
 
