@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Información del Beneficiario</title>
+    <title>Información del Centro Sanitario</title>
     <?php
         session_start();
         $LinksRoute="./";
@@ -24,7 +24,7 @@
         ?>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">Sistema Gestión Social <small>Información del beneficiario</small></h1>
+              <h1 class="all-tittles">Sistema Gestión Ambiental <small>Información del centro sanitario</small></h1>
             </div>
         </div>
         <?php
@@ -85,7 +85,7 @@
             <form class="modal-content" action="process/UpdateBook.php" method="POST" id="saveData" autocomplete="off" enctype="multipart/form-data">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title text-center all-tittles">Actualizar Beneficiario</h4>
+                <h4 class="modal-title text-center all-tittles">Actualizar Centro Sanitario</h4>
               </div>
               <div class="modal-body" id="ModalData"></div>
               <div class="modal-footer">

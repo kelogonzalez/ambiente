@@ -117,27 +117,27 @@
 
 
                             <div class="group-material">
-                                <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí el horario de entrada del beneficiario" name="bookEdition" maxlength="50" data-toggle="tooltip" data-placement="top" title="Horario de Entrada">
+                                <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí el horario de entrada del beneficiario" name="bookVehiculos" maxlength="50" data-toggle="tooltip" data-placement="top" title="Horario de Entrada">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Biologicos Kg/mes</label>
                             </div>
 
                             <div class="group-material">
-                                <input type="text" class="material-control tooltips-general"  placeholder="Escribe aquí el horario de salida del beneficiario" name="bookReferencia"  maxlength="90" data-toggle="tooltip" data-placement="top" title="Horario de Salida" >
+                                <input type="text" class="material-control tooltips-general"  placeholder="Escribe aquí el horario de salida del beneficiario" name="bookPasajeros"  maxlength="90" data-toggle="tooltip" data-placement="top" title="Horario de Salida" >
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Anatomo-patologicos kg/mes</label>
                             </div>
                             <div class="group-material">
-                                <input type="text" class="material-control tooltips-general"  placeholder="Escribe aquí el horario de salida del beneficiario" name="bookReferencia"  maxlength="90" data-toggle="tooltip" data-placement="top" title="Horario de Salida" >
+                                <input type="text" class="material-control tooltips-general"  placeholder="Escribe aquí el horario de salida del beneficiario" name="bookSocios"  maxlength="90" data-toggle="tooltip" data-placement="top" title="Horario de Salida" >
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Cortopunzantes kg/mes</label>
                             </div>
 
                             <div class="group-material">
-                                <input type="text" class="material-control tooltips-general"  placeholder="Escribe aquí el horario de salida del beneficiario" name="bookReferencia"  maxlength="90" data-toggle="tooltip" data-placement="top" title="Horario de Salida" >
+                                <input type="text" class="material-control tooltips-general"  placeholder="Escribe aquí el horario de salida del beneficiario" name="bookIdioma"  maxlength="90" data-toggle="tooltip" data-placement="top" title="Horario de Salida" >
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Disposición Final</label>
