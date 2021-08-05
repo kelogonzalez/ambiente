@@ -61,7 +61,7 @@
         ?>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">Sistema Turístico <small>Reportes y estadísticas</small></h1>
+              <h1 class="all-tittles">Sistema Ambiental <small>Reportes y estadísticas</small></h1>
             </div>
         </div>
         <div class="container-fluid">
@@ -77,7 +77,7 @@
                                 <img src="../assets/img/pdf.png" alt="pdf" class="img-responsive center-box" style="max-width: 120px;">
                             </div>
                             <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
-                                Bienvenido al área de reportes, aquí puedes generar reportes de las empresas turísticas del cantón Naranjal.
+                                Bienvenido al área de reportes, aquí puedes generar reportes de los centros sanitarios del cantón Naranjal.
                             </div>
                         </div>
                     </div>
@@ -141,9 +141,30 @@
                                     <p class="text-center">
                                         <i class="zmdi zmdi-trending-up zmdi-hc-5x btn-file" data-file="../report/ReportGeneral.php" data-type="report"></i>
                                     </p>
-                                    <h3 class="text-center">Reporte General de las Empresas</h3>
+                                    <h3 class="text-center">Reporte de Centros Urbanos</h3>
                                 </div>
+                                
                             </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="full-reset report-content">
+                                    <p class="text-center">
+                                        <i class="zmdi zmdi-trending-up zmdi-hc-5x btn-file" data-file="../report/ReportRural.php" data-type="report"></i>
+                                    </p>
+                                    <h3 class="text-center">Reporte de Centros Rurales</h3>
+                                </div>
+                                
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="full-reset report-content">
+                                    <p class="text-center">
+                                        <i class="zmdi zmdi-trending-up zmdi-hc-5x btn-file" data-file="../report/ReportMSP.php" data-type="report"></i>
+                                    </p>
+                                    <h3 class="text-center">Reporte de Centros MSP</h3>
+                                </div>
+                                
+                            </div>
+                            <!--
                             <div class="col-xs-12 col-sm-6 col-md-4">
                                 <div class="full-reset report-content">
                                     <p class="text-center">
@@ -153,7 +174,7 @@
                                 </div>
                             </div>
 
-<!--
+
                             <div class="col-xs-12 col-sm-6 col-md-4">
                                 <div class="full-reset report-content">
                                     <p class="text-center">
