@@ -12,7 +12,7 @@ $bookProvider=consultasSQL::CleanStringText($_POST['bookProvider']);
 $bookYear=consultasSQL::CleanStringText($_POST['bookYear']);
 $bookEditorial=consultasSQL::CleanStringText($_POST['bookEditorial']);
 $bookEdition=consultasSQL::CleanStringText($_POST['bookEdition']);
-$bookCopies=consultasSQL::CleanStringText($_POST['bookCopies']);
+$bookCopies=1;
 $bookLocation=consultasSQL::CleanStringText($_POST['bookLocation']);
 $bookOffice=consultasSQL::CleanStringText($_POST['bookOffice']);
 $bookEstimated=consultasSQL::CleanStringText($_POST['bookEstimated']);
@@ -114,8 +114,8 @@ if(mysqli_num_rows($checkLoanBook)<=0 && mysqli_num_rows($checkLoanBook1)<=0){
                 if(consultasSQL::UpdateSQL("libro", $bookDataSave, "CodigoLibro='$bookCode'")){
                     echo '<script type="text/javascript">
                         swal({
-                            title:"¡Datos del beneficiario actualizados!",
-                            text:"Los datos del beneficiario se actualizaron correctamente",
+                            title:"¡Datos del centro sanitario actualizados!",
+                            text:"Los datos del centro sanitario se actualizaron correctamente",
                             type: "success",
                             confirmButtonText: "Aceptar"
                         },

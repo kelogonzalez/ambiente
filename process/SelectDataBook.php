@@ -9,13 +9,13 @@ if(mysqli_num_rows($SdataB)>=1){
     echo '<input value="'.$dBook["CodigoLibro"].'" type="hidden" name="primaryKey">
     <legend><strong>Información básica</strong></legend><br>
     <div class="group-material">
-        <input type="text" value="'.$dBook['CodigoLibroManual'].'" class="tooltips-general material-control" placeholder="Escribe aquí el código del libro" name="bookCodeManual" pattern="[a-zA-Z0-9-]{1,100}" maxlength="100" data-toggle="tooltip" data-placement="top" title="Solamente números, letras y guiones">
+        <input type="text" value="'.$dBook['CodigoLibroManual'].'" class="tooltips-general material-control" placeholder="Escribe aquí el el RUC" name="bookCodeManual" pattern="[a-zA-Z0-9-]{1,100}" maxlength="100" data-toggle="tooltip" data-placement="top" title="Solamente números, letras y guiones">
         <span class="highlight"></span>
         <span class="bar"></span>
-        <label>Cédula</label>
+        <label>RUC</label>
     </div>
     <div class="group-material">
-        <span>Parroquia</span>
+        <span>Tipo de Establecimiento</span>
         <select class="tooltips-general material-control" name="bookCategory" data-toggle="tooltip" data-placement="top" title="Elige la categoría del libro">';
             $nameCateg=ejecutarSQL::consultar("SELECT * FROM categoria WHERE CodigoCategoria='".$dBook['CodigoCategoria']."'");
             $nC=mysqli_fetch_array($nameCateg, MYSQLI_ASSOC);
@@ -32,23 +32,23 @@ if(mysqli_num_rows($SdataB)>=1){
         <input type="text" value="'.$dBook['Titulo'].'" class="tooltips-general material-control" name="bookName" required="" maxlength="70" data-toggle="tooltip" data-placement="top" title="Escribe el nombre de la empresa">
         <span class="highlight"></span>
         <span class="bar"></span>
-        <label>Nombre del Beneficiario</label>
+        <label>Nombre del Establecimiento</label>
     </div>
     <div class="group-material">
         <input type="text" value="'.$dBook['Autor'].'" class="tooltips-general material-control" name="bookAutor" required="" maxlength="70" data-toggle="tooltip" data-placement="top" title="Escribe el nombre de la calle principal">
         <span class="highlight"></span>
         <span class="bar"></span>
-        <label>Teléfono</label>
+        <label>Representante Legal</label>
     </div>
     <div class="group-material">
         <input type="text" value="'.$dBook['Pais'].'" class="tooltips-general material-control" required="" name="bookCountry" maxlength="50" data-toggle="tooltip" data-placement="top" title="Escribe la parroquia de la empresa">
         <span class="highlight"></span>
         <span class="bar"></span>
-        <label>Sector</label>
+        <label>Teléfono</label>
     </div>
     <!--<legend><strong>Otros datos</strong></legend><br>-->
     <div class="group-material">
-        <span>Gestionador</span>
+        <span>Zona</span>
         <select class="tooltips-general material-control" name="bookProvider" data-toggle="tooltip" data-placement="top" title="Elige la clasificación">';
             $nameProv=ejecutarSQL::consultar("SELECT * FROM proveedor WHERE CodigoProveedor='".$dBook['CodigoProveedor']."'");
             $nP=mysqli_fetch_array($nameProv, MYSQLI_ASSOC);
@@ -65,15 +65,16 @@ if(mysqli_num_rows($SdataB)>=1){
        <input type="text" value="'.$dBook['Year'].'" class="material-control tooltips-general" name="bookYear" required="" maxlength="50" data-toggle="tooltip" data-placement="top" title="Solamente números, sin espacios">
         <span class="highlight"></span>
         <span class="bar"></span>
-        <label>Referencia</label>
+        <label>Email</label>
     </div>
 
     <div class="group-material">
-        <input type="text" value="'.$dBook['Edicion'].'" class="material-control tooltips-general" name="bookEdition" required="" maxlength="50" data-toggle="tooltip" data-placement="top" title="Bario o Ciudadela">
+        <input type="text" value="'.$dBook['idioma'].'" class="material-control tooltips-general" name="bookIdioma" required="" maxlength="50" data-toggle="tooltip" data-placement="top" title="Bario o Ciudadela">
         <span class="highlight"></span>
         <span class="bar"></span>
-        <label>Horario de Entrada</label>
+        <label>Disposición Final</label>
     </div>
+    <!--
     <div class="group-material">
         <input type="text" value="'.$dBook['referencia'].'" class="material-control tooltips-general" name="bookReferencia" required=" maxlength="100" data-toggle="tooltip" data-placement="top" title="Escribe una referencia de ubicación">
         <span class="highlight"></span>
@@ -81,7 +82,7 @@ if(mysqli_num_rows($SdataB)>=1){
         <label>Horario de Salida</label>
     </div>
     
-    <!--
+    
     <legend><strong>Ubicación y resumen</strong></legend><br>
     <div class="group-material">
        <input type="text" value="'.$dBook['Ubicacion'].'" class="material-control tooltips-general" name="bookLocation" required="" maxlength="50" data-toggle="tooltip" data-placement="top" title="¿Cúales son sus horarios?">
@@ -94,15 +95,40 @@ if(mysqli_num_rows($SdataB)>=1){
         <input type="text" value="'.$dBook['Cargo'].'" class="material-control tooltips-general" name="bookOffice" required="" maxlength="50" data-toggle="tooltip" data-placement="top" title="Sitio WEb">
         <span class="highlight"></span>
         <span class="bar"></span>
-        <label>Centro de Atención</label>
+        <label>Tipo de Atención</label>
     </div>
 
     <div class="group-material">
         <input type="text" value="'.$dBook['Editorial'].'" class="material-control tooltips-general" name="bookEditorial"  maxlength="100" data-toggle="tooltip" data-placement="top" title="Sólo números">
         <span class="highlight"></span>
         <span class="bar"></span>
-        <label>Días de Hemodiálisis</label>
+        <label>N° de pacientes</label>
     </div>
+
+
+    <legend><strong>DESECHOS</strong></legend><br>
+    <div class="group-material">
+    <input type="text" value="'.$dBook['vehiculos'].'" class="material-control tooltips-general" name="bookVehiculos" maxlength="100" data-toggle="tooltip" data-placement="top" title="Vehiculos">
+     <span class="highlight"></span>
+     <span class="bar"></span>
+     <label>Biologicos kg/mes</label>
+ </div>
+
+ <div class="group-material">
+    <input type="text" value="'.$dBook['pasajeros'].'" class="material-control tooltips-general" name="bookPasajeros" maxlength="100" data-toggle="tooltip" data-placement="top" title="Pasajeros">
+     <span class="highlight"></span>
+     <span class="bar"></span>
+     <label>Anatomo-patologicos kg/mes</label>
+ </div>
+
+ <div class="group-material">
+    <input type="text" value="'.$dBook['socios'].'" class="material-control tooltips-general" name="bookSocios" maxlength="100" data-toggle="tooltip" data-placement="top" title="Socios">
+     <span class="highlight"></span>
+     <span class="bar"></span>
+     <label>Cortopunzantes</label>
+ </div>
+
+
 
     <!--
     <div class="group-material">
@@ -367,26 +393,7 @@ if(mysqli_num_rows($SdataB)>=1){
         <label>Cinturones</label>
     </div>
 
-    <div class="group-material">
-       <input type="text" value="'.$dBook['vehiculos'].'" class="material-control tooltips-general" name="bookVehiculos" maxlength="100" data-toggle="tooltip" data-placement="top" title="Vehiculos">
-        <span class="highlight"></span>
-        <span class="bar"></span>
-        <label>Vehiculos</label>
-    </div>
-
-    <div class="group-material">
-       <input type="text" value="'.$dBook['pasajeros'].'" class="material-control tooltips-general" name="bookPasajeros" maxlength="100" data-toggle="tooltip" data-placement="top" title="Pasajeros">
-        <span class="highlight"></span>
-        <span class="bar"></span>
-        <label>Pasajeros</label>
-    </div>
-
-    <div class="group-material">
-       <input type="text" value="'.$dBook['socios'].'" class="material-control tooltips-general" name="bookSocios" maxlength="100" data-toggle="tooltip" data-placement="top" title="Socios">
-        <span class="highlight"></span>
-        <span class="bar"></span>
-        <label>Socios</label>
-    </div>
+    
 
     <div class="group-material">
        <input type="text" value="'.$dBook['choferes'].'" class="material-control tooltips-general" name="bookChoferes" maxlength="100" data-toggle="tooltip" data-placement="top" title="Choferes">

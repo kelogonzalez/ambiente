@@ -11,7 +11,7 @@
     <script>
         $(document).ready(function(){
            $('.btn-info-book').click(function(){
-               window.location ="infobook.php?codeBook="+$(this).attr("data-code-book");
+               window.location ="infobookrural.php?codeBook="+$(this).attr("data-code-book");
            });
            $('.list-catalog-container li').click(function(){
                window.location="catalogrural.php?CategoryCode="+$(this).attr("data-code-category");
