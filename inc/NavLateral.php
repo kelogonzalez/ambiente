@@ -40,8 +40,8 @@
 
 
                         <li>
-                            <a href="<?php echo $LinkRouteAdmin; ?>adminprovider.php">
-                                <i class="zmdi zmdi-assignment-account zmdi-hc-fw"></i>&nbsp;&nbsp; Nuevo Gestor
+                            <a href="<?php echo $LinkRouteAdmin; ?>adminuser.php">
+                                <i class="zmdi zmdi-assignment-account zmdi-hc-fw"></i>&nbsp;&nbsp; Nuevo Personal
                             </a>
                         </li>
 
@@ -67,13 +67,13 @@
                             <a href="<?php echo $LinkRouteAdmin; ?>adminuser.php">
                                 <i class="zmdi zmdi-face zmdi-hc-fw"></i>&nbsp;&nbsp; Nuevo administrador
                             </a>
-                        </li>
+                        </li><!--
                         <li>
                             <a href="<?php echo $LinkRouteAdmin; ?>adminteacher.php">
                                 <i class="zmdi zmdi-male-alt zmdi-hc-fw"></i>&nbsp;&nbsp; Nuevo personal
                             </a>
                         </li>
-<!--
+
                         <li>
                             <a href="<?php echo $LinkRouteAdmin; ?>adminstudent.php">
                                 <i class="zmdi zmdi-accounts zmdi-hc-fw"></i>&nbsp;&nbsp; Nuevo usuario

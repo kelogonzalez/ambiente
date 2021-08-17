@@ -43,13 +43,13 @@
                        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                             <legend><strong>FICHA</strong></legend><br>
                             <div class="group-material">
-                                <input type="text" class="tooltips-general material-control" placeholder="Escribe aquí la cédula" name="bookCodeManual" pattern="[a-zA-Z0-9-]{1,100}" maxlength="100" data-toggle="tooltip" data-placement="top" title="Solamente números">
+                                <input type="text" class="tooltips-general material-control" placeholder="Escribe aquí la RUC" name="bookCodeManual" pattern="[a-zA-Z0-9-]{1,100}" maxlength="100" data-toggle="tooltip" data-placement="top" title="Solamente números">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>RUC</label>
                             </div>
                             <div class="group-material">
-                                <input type="text" class="tooltips-general material-control" placeholder="Escribe aquí el nombre del beneficiario" name="bookName"  maxlength="70" data-toggle="tooltip" data-placement="top" title="Escribe el nombre del beneficiario">
+                                <input type="text" class="tooltips-general material-control" placeholder="Escribe aquí el nombre del establecimiento" name="bookName"  maxlength="70" data-toggle="tooltip" data-placement="top" title="Escribe el nombre del beneficiario">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Nombre del Establecimiento</label>
@@ -95,19 +95,19 @@
                                 </select>
                             </div>
                            <div class="group-material">
-                               <input type="text" class="material-control tooltips-general" placeholder="Escribe una referencia clara de donde vive" name="bookYear"  maxlength="50" data-toggle="tooltip" data-placement="top" title="Escribe una referencia">
+                               <input type="text" class="material-control tooltips-general" placeholder="Escribe un correo electrónico" name="bookYear"  maxlength="50" data-toggle="tooltip" data-placement="top" title="Escribe una referencia">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Correo Electrónico</label>
                            </div>
                            <div class="group-material">
-                               <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí el lugar donde se realiza la Dialisís" name="bookOffice"  maxlength="50" data-toggle="tooltip" data-placement="top" title="Centro de Atención">
+                               <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí el tipo de atención" name="bookOffice"  maxlength="50" data-toggle="tooltip" data-placement="top" title="Centro de Atención">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Tipo de Atención</label>
                             </div>
                             <div class="group-material">
-                                <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí los días en ser atendido" name="bookEditorial" maxlength="70" data-toggle="tooltip" data-placement="top" title="Dias de Hemodiálisis">
+                                <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí los pacientes que se atienden" name="bookEditorial" maxlength="70" data-toggle="tooltip" data-placement="top" title="Dias de Hemodiálisis">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>N° de pacientes al dia</label>
@@ -117,27 +117,27 @@
 
 
                             <div class="group-material">
-                                <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí el horario de entrada del beneficiario" name="bookVehiculos" maxlength="50" data-toggle="tooltip" data-placement="top" title="Horario de Entrada">
+                                <input type="text" class="material-control tooltips-general" placeholder="Escribe aquí la cantidad de desechos" name="bookVehiculos" maxlength="50" data-toggle="tooltip" data-placement="top" title="Horario de Entrada">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Biologicos Kg/mes</label>
                             </div>
 
                             <div class="group-material">
-                                <input type="text" class="material-control tooltips-general"  placeholder="Escribe aquí el horario de salida del beneficiario" name="bookPasajeros"  maxlength="90" data-toggle="tooltip" data-placement="top" title="Horario de Salida" >
+                                <input type="text" class="material-control tooltips-general"  placeholder="Escribe aquí la cantidad de desechos" name="bookPasajeros"  maxlength="90" data-toggle="tooltip" data-placement="top" title="Horario de Salida" >
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Anatomo-patologicos kg/mes</label>
                             </div>
                             <div class="group-material">
-                                <input type="text" class="material-control tooltips-general"  placeholder="Escribe aquí el horario de salida del beneficiario" name="bookSocios"  maxlength="90" data-toggle="tooltip" data-placement="top" title="Horario de Salida" >
+                                <input type="text" class="material-control tooltips-general"  placeholder="Escribe aquí la cantidad de desechos" name="bookSocios"  maxlength="90" data-toggle="tooltip" data-placement="top" title="Horario de Salida" >
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Cortopunzantes kg/mes</label>
                             </div>
 
                             <div class="group-material">
-                                <input type="text" class="material-control tooltips-general"  placeholder="Escribe aquí el horario de salida del beneficiario" name="bookIdioma"  maxlength="90" data-toggle="tooltip" data-placement="top" title="Horario de Salida" >
+                                <input type="text" class="material-control tooltips-general"  placeholder="Escribe aquí quien dispone" name="bookIdioma"  maxlength="90" data-toggle="tooltip" data-placement="top" title="Horario de Salida" >
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Disposición Final</label>

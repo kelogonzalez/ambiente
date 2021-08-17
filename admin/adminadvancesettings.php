@@ -92,7 +92,7 @@
         ?>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">Sistema Turístico <small>configuraciones avanzadas</small></h1>
+              <h1 class="all-tittles">Sistema Ambiental <small>configuraciones avanzadas</small></h1>
             </div>
         </div>
         <ul class="nav nav-tabs nav-justified" role="tablist">
@@ -156,13 +156,17 @@
                             </div>
                         </div>
 
-                      -->
-                        <div class="col-xs-12 col-sm-6 col-md-4">
+                      
+                        
+                      
+                      <div class="col-xs-12 col-sm-6 col-md-4">
                             <div class="report-content">
-                                <p class="text-center"><i class="zmdi zmdi-male-alt zmdi-hc-4x btn-delete" data-process="../process/DeleteAllUsers.php?userType=Teacher" data-text="todos los empleados de turismo" data-type="delete"></i></p>
-                                <h3 class="text-center all-tittles">eliminar personal de turismo</h3>
+                                <p class="text-center"><i class="zmdi zmdi-male-alt zmdi-hc-4x btn-delete" data-process="../process/DeleteAllUsers.php?userType=Teacher" data-text="todos los empleados" data-type="delete"></i></p>
+                                <h3 class="text-center all-tittles">eliminar personal</h3>
                             </div>
                         </div>
+-->
+
                         <div class="col-xs-12 col-sm-6 col-md-4">
                             <div class="report-content">
                                 <p class="text-center"><i class="zmdi zmdi-accounts-alt zmdi-hc-4x btn-delete" data-process="../process/DeleteAllUsers.php?userType=Student" data-text="todos los usuarios" data-type="delete"></i></p>
@@ -181,8 +185,8 @@
                       -->
                         <div class="col-xs-12 col-sm-6 col-md-4">
                             <div class="report-content">
-                                <p class="text-center"><i class="zmdi zmdi-book zmdi-hc-4x btn-delete" data-process="../process/DeleteAllBooks.php" data-text="todas las empresas" data-type="delete"></i></p>
-                                <h3 class="text-center all-tittles">eliminar empresas</h3>
+                                <p class="text-center"><i class="zmdi zmdi-book zmdi-hc-4x btn-delete" data-process="../process/DeleteAllBooks.php" data-text="todas los centros" data-type="delete"></i></p>
+                                <h3 class="text-center all-tittles">eliminar Centros</h3>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4">

@@ -22,14 +22,14 @@
         ?>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">Sistema Turístico <small>Administración Usuarios</small></h1>
+              <h1 class="all-tittles">Sistema Ambiental <small>Administración Usuarios</small></h1>
             </div>
         </div>
         <div class="container-fluid">
             <ul class="nav nav-tabs nav-justified"  style="font-size: 17px;">
                 <li role="presentation"  class="active"><a href="adminuser.php">Administradores</a></li>
-                <li role="presentation"><a href="adminteacher.php">Personal de Turismo</a></li>
-                <!--<li role="presentation"><a href="adminstudent.php">Usuarios</a></li>
+                <!--<li role="presentation"><a href="adminteacher.php">Personal de Turismo</a></li>
+                <li role="presentation"><a href="adminstudent.php">Usuarios</a></li>
                 <li role="presentation"><a href="adminpersonal.php">Personal administrativo</a></li>-->
             </ul>
         </div>
